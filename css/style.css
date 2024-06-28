@@ -15,7 +15,8 @@ body {
     grid-template-columns: 200px 1fr;
 }
 
-h1 {
+h1,
+h3 {
     display: inline;
 }
 
@@ -26,6 +27,11 @@ li {
 svg {
     width: 24px;
     height: 24px;
+}
+
+img {
+    width: 80px;
+    border-radius: 50%;
 }
 
 #side {
