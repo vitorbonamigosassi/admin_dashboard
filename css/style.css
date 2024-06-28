@@ -30,7 +30,12 @@ svg {
 }
 
 input {
-    display: inline;
+    background: #e2e8f0;
+    border-radius: 24px;
+    border: none;
+    width: 400px;
+    height: 24px;
+    padding: 8px;
 }
 
 img {
@@ -40,6 +45,14 @@ img {
 
 menu {
     padding: 0;
+}
+
+button {
+    background: #1992d4;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 24px;
+    color:white;
 }
 
 #side {
@@ -64,6 +77,17 @@ menu {
 
 #profileinfo {
     align-items: end;
+}
+
+#hello {
+     display: grid;
+     grid-template-columns: 1fr 3fr;
+     grid-template-rows: 1fr;
+     gap: 24px;
+}
+
+#hello > div {
+    grid-column: 2 / 3;
 }
 
 #main {
@@ -95,13 +119,15 @@ menu {
 }
 
 .card {
+    border-radius: 8px;
     padding: 24px;
     background: #fff;
-    border-left: 4px solid #f0b429;
+    border-left: 8px solid #f0b429;
 }
 
 .announcement,
 .trending {
+    border-radius: 8px;
     padding: 24px;
     background: #fff;
 }
