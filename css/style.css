@@ -9,12 +9,11 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    background: #e2e8f0;
     display: grid;
     grid-template-columns: minmax(300px, 1fr) 3fr;
     grid-template-rows: minmax(200px, 1fr) 3fr;
+    background: #e2e8f0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1,
@@ -22,70 +21,71 @@ h3 {
     display: inline;
 }
 
+img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+button {
+    padding: 8px 24px;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    background: #1992d4;
+}
+
+menu {
+    padding: 20px;
+
+    background: green;
+}
+
 li {
-    list-style: none;
     margin: 12px 0;
+    list-style: none;
+
     background: red;
 }
 
 svg {
     width: 24px;
     height: 24px;
+
     background: purple;
 }
 
 input {
-    background: #e2e8f0;
-    border-radius: 24px;
-    border: none;
     width: 400px;
     height: 24px;
     padding: 8px;
-}
-
-img {
-    width: 80px;
-    border-radius: 50%;
-}
-
-menu {    
-    background: green;
-    padding: 20px;
+    border: none;
+    border-radius: 24px;
+    background: #e2e8f0;
 }
 
 #profileinfo menu {
-    background: green;
     display: flex;
     align-content: space-evenly;
     gap: 20px;
-}
 
-
-
-button {
-    background: #1992d4;
-    border: none;
-    border-radius: 24px;
-    padding: 8px 24px;
-    color:white;
+    background: green;
 }
 
 #side {
-    background: #1992d4;
     grid-row: 1 / -1;
     grid-column: 1 / 2;
-    padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* gap: 80px; */
+    padding: 24px;
+    background: #1992d4;
 }
 
 #profile {
-    background: #fff;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     padding: 24px;
+    background: #fff;
 }
 
 #searchinfo,
@@ -102,46 +102,35 @@ button {
 }
 
 #hello {
-     display: grid;
-     grid-template-columns: 1fr 3fr;
-     grid-template-rows: 1fr;
-     gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 24px;
 }
 
-#hello > div {
+#hello>div {
     grid-column: 2 / 3;
 }
 
 #main {
     grid-row: 2 / -1;
     grid-column: 2 / -1;
-
     display: flex;
-    /* grid-template-columns: 1fr 300px; */
-    
     padding: 24px;
     gap: 24px;
     overflow: auto;
 }
 
-/* #ann{
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-} */
-
 #info {
-    /* grid-column: 2 / 3;
-    grid-row: 2 / -1; */
-
     display: grid;
     grid-template-rows: 40px 1fr 40px 1fr;
 }
 
-#info > h2 {
+#info>h2 {
     grid-row: 1 / 2;
 }
 
-#info > #trend {
+#info>#trend {
     grid-row: 3 / 4;
 }
 
@@ -153,50 +142,42 @@ button {
     grid-row: 4 / 5
 }
 
-/* .bunch {
-    grid-row: 1 / 3
-} */
-
 .grid {
-    /* grid-column: 1 / 2;
-    grid-row: 2 / -1; */
     display: grid;
     gap: 12px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-rows: 40px repeat(3, 1fr);
 }
 
-.grid > h2 {
+.grid>h2 {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    /* background: purple; */
 }
 
 .card {
-    border-radius: 8px;
     padding: 24px;
-    background: #fff;
     border-left: 8px solid #f0b429;
+    border-radius: 8px;
+    background: #fff;
 }
 
 .announcement,
 .trending {
-    border-radius: 8px;
     padding: 24px;
+    border-radius: 8px;
     background: #fff;
 }
 
 
 .announcement div,
 .trending div {
-    background: green;
     margin: 12px;
+
+    background: green;
 }
 
-.trending div{
+.trending div {
     display: grid;
-    margin: 12px;
     grid-template-columns: 1fr 3fr;
     gap: 12px;
 }
